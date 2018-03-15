@@ -25,6 +25,7 @@
 		D4E7ED48205ABE120090C823 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3E205ABE120090C823 /* UIViewX.swift */; };
 		D4E7ED49205ABE120090C823 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3F205ABE120090C823 /* UIViewXRadialGradient.swift */; };
 		D4E7ED4A205ABE120090C823 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED40205ABE120090C823 /* UIVisualEffectViewX.swift */; };
+		D4E7ED4C205ACC950090C823 /* Floating_Action_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED4B205ACC950090C823 /* Floating_Action_Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D4E7ED3E205ABE120090C823 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		D4E7ED3F205ABE120090C823 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
 		D4E7ED40205ABE120090C823 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		D4E7ED4B205ACC950090C823 /* Floating_Action_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floating_Action_Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				D4E7ED36205ABE120090C823 /* DesignableX */,
 				D47CDA31205AB2950069CF25 /* Assets.xcassets */,
+				D4E7ED4B205ACC950090C823 /* Floating_Action_Button.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				D47CDA30205AB2950069CF25 /* ViewController.swift in Sources */,
 				D47CDA20205AB2950069CF25 /* AppDelegate.swift in Sources */,
 				D4E7ED4A205ABE120090C823 /* UIVisualEffectViewX.swift in Sources */,
+				D4E7ED4C205ACC950090C823 /* Floating_Action_Button.swift in Sources */,
 				D4E7ED41205ABE120090C823 /* UIButtonX.swift in Sources */,
 				D4E7ED47205ABE120090C823 /* UIViewControllerX.swift in Sources */,
 				D4E7ED44205ABE120090C823 /* UISliderX.swift in Sources */,
