@@ -117,6 +117,9 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51y-RH-YmB"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-ev-pvy" customClass="UIViewX" customModule="Secret_Project" customModuleProvider="target">
                                 <rect key="frame" x="165" y="457" width="329" height="329"/>
@@ -141,6 +144,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="menu_view" destination="Nh3-ev-pvy" id="9dA-EJ-v3A"/>
                         <outlet property="tableView" destination="6aJ-45-chj" id="jaB-7w-YEL"/>
                     </connections>
                 </viewController>
