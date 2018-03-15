@@ -94,7 +94,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.22352941176470587" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="floating-button"/>
+                                <state key="normal" image="f-a-b"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="30"/>
@@ -124,6 +124,6 @@
     </scenes>
     <resources>
         <image name="bg" width="414" height="736"/>
-        <image name="floating-button" width="60" height="60"/>
+        <image name="f-a-b" width="60" height="60"/>
     </resources>
 </document>
