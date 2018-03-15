@@ -1,9 +1,3 @@
-
-/*
- This is the model class that holds your data.
- This model is what is shown in a tableview, collectionview, pickerview row, etc.
- */
-
 import UIKit
 
 class Model {

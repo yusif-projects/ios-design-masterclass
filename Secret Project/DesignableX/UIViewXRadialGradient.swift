@@ -1,11 +1,3 @@
-//
-//  UIViewXRadialGradient.swift
-//  DesignableXTesting
-//
-//  Created by Mark Moeykens on 1/27/17.
-//  Copyright © 2017 Moeykens. All rights reserved.
-//
-
 import UIKit
 
 @IBDesignable

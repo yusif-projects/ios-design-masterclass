@@ -1,11 +1,3 @@
-//
-//  UILabelX.swift
-//  DesignableXTesting
-//
-//  Created by Mark Moeykens on 1/28/17.
-//  Copyright © 2017 Moeykens. All rights reserved.
-//
-
 import UIKit
 
 @IBDesignable

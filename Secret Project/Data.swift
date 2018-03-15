@@ -1,8 +1,3 @@
-
-/*
- This is where you will be getting your data from a different source.
- */
-
 import UIKit
 
 class Data {

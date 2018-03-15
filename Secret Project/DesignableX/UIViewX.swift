@@ -1,17 +1,7 @@
-//
-//  UIViewX.swift
-//  DesignableX
-//
-//  Created by Mark Moeykens on 12/31/16.
-//  Copyright © 2016 Mark Moeykens. All rights reserved.
-//
-
 import UIKit
 
 @IBDesignable
 class UIViewX: UIView {
-    
-    // MARK: - Gradient
     
     @IBInspectable var firstColor: UIColor = UIColor.white {
         didSet {
@@ -50,8 +40,6 @@ class UIViewX: UIView {
         }
     }
     
-    // MARK: - Border
-    
     @IBInspectable public var borderColor: UIColor = UIColor.clear {
         didSet {
             layer.borderColor = borderColor.cgColor
@@ -69,8 +57,6 @@ class UIViewX: UIView {
             layer.cornerRadius = cornerRadius
         }
     }
-    
-    // MARK: - Shadow
     
     @IBInspectable public var shadowOpacity: CGFloat = 0 {
         didSet {

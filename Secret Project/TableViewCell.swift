@@ -1,11 +1,3 @@
-//
-//  TableViewCell.swift
-//  MVC
-//
-//  Created by Mark Moeykens on 5/2/17.
-//  Copyright © 2017 Moeykens. All rights reserved.
-//
-
 import UIKit
 
 class TableViewCell: UITableViewCell {
