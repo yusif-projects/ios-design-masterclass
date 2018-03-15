@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -31,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aJ-45-chj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aJ-45-chj">
                                 <rect key="frame" x="0.0" y="239" width="375" height="428"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,9 +101,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-HD-l00" customClass="Floating_Action_Button" customModule="Secret_Project" customModuleProvider="target">
-                                <rect key="frame" x="302" y="590" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-HD-l00" customClass="Floating_Action_Button" customModule="Secret_Project" customModuleProvider="target">
+                                <rect key="frame" x="299" y="591" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.22352941176470587" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="f-a-b"/>
@@ -118,23 +118,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-ev-pvy" customClass="UIViewX" customModule="Secret_Project" customModuleProvider="target">
-                                <rect key="frame" x="162" y="450" width="340" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-ev-pvy" customClass="UIViewX" customModule="Secret_Project" customModuleProvider="target">
+                                <rect key="frame" x="165" y="457" width="329" height="329"/>
                                 <color key="backgroundColor" red="0.95106738805770874" green="0.32649987936019897" blue="0.46891367435455322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="329" id="bhF-Jx-hiO"/>
+                                    <constraint firstAttribute="width" secondItem="Nh3-ev-pvy" secondAttribute="height" multiplier="1:1" id="o2w-0Y-Ehc"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="170"/>
+                                        <real key="value" value="165"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="6aJ-45-chj"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="Nh3-ev-pvy" firstAttribute="centerY" secondItem="M5E-HD-l00" secondAttribute="centerY" id="44Y-WY-YVi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M5E-HD-l00" secondAttribute="bottom" constant="16" id="Ii7-90-dPQ"/>
+                            <constraint firstAttribute="trailing" secondItem="M5E-HD-l00" secondAttribute="trailing" constant="16" id="a1N-cJ-b7Z"/>
+                            <constraint firstItem="Nh3-ev-pvy" firstAttribute="centerX" secondItem="M5E-HD-l00" secondAttribute="centerX" id="zXI-0x-gCD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="6aJ-45-chj" id="jaB-7w-YEL"/>
