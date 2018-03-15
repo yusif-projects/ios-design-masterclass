@@ -10,7 +10,6 @@
 		D47CDA20205AB2950069CF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA1F205AB2950069CF25 /* AppDelegate.swift */; };
 		D47CDA23205AB2950069CF25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA22205AB2950069CF25 /* Model.swift */; };
 		D47CDA25205AB2950069CF25 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA24205AB2950069CF25 /* Data.swift */; };
-		D47CDA28205AB2950069CF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA26205AB2950069CF25 /* Main.storyboard */; };
 		D47CDA2B205AB2950069CF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA2A205AB2950069CF25 /* Main.storyboard */; };
 		D47CDA2D205AB2950069CF25 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA2C205AB2950069CF25 /* TableViewCell.swift */; };
 		D47CDA30205AB2950069CF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA2F205AB2950069CF25 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 		D47CDA1F205AB2950069CF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47CDA22205AB2950069CF25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D47CDA24205AB2950069CF25 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		D47CDA27205AB2950069CF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D47CDA2A205AB2950069CF25 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D47CDA2C205AB2950069CF25 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D47CDA2F205AB2950069CF25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,10 +60,7 @@
 		D47CDA1E205AB2950069CF25 /* Secret Project */ = {
 			isa = PBXGroup;
 			children = (
-				D47CDA1F205AB2950069CF25 /* AppDelegate.swift */,
-				D47CDA26205AB2950069CF25 /* Main.storyboard */,
 				D47CDA31205AB2950069CF25 /* Assets.xcassets */,
-				D47CDA33205AB2950069CF25 /* LaunchScreen.storyboard */,
 				D47CDA36205AB2950069CF25 /* Info.plist */,
 				D47CDA21205AB2950069CF25 /* Model */,
 				D47CDA29205AB2950069CF25 /* View */,
@@ -86,6 +81,7 @@
 		D47CDA29205AB2950069CF25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D47CDA33205AB2950069CF25 /* LaunchScreen.storyboard */,
 				D47CDA2A205AB2950069CF25 /* Main.storyboard */,
 				D47CDA2C205AB2950069CF25 /* TableViewCell.swift */,
 			);
@@ -95,6 +91,7 @@
 		D47CDA2E205AB2950069CF25 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D47CDA1F205AB2950069CF25 /* AppDelegate.swift */,
 				D47CDA2F205AB2950069CF25 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -159,7 +156,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47CDA28205AB2950069CF25 /* Main.storyboard in Resources */,
 				D47CDA35205AB2950069CF25 /* LaunchScreen.storyboard in Resources */,
 				D47CDA32205AB2950069CF25 /* Assets.xcassets in Resources */,
 				D47CDA2B205AB2950069CF25 /* Main.storyboard in Resources */,
@@ -184,14 +180,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D47CDA26205AB2950069CF25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D47CDA27205AB2950069CF25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D47CDA33205AB2950069CF25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NM5JA8Q5L;
 				INFOPLIST_FILE = "Secret Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusif-the-ios-developer.Secret-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NM5JA8Q5L;
 				INFOPLIST_FILE = "Secret Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusif-the-ios-developer.Secret-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
