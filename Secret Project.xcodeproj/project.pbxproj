@@ -15,6 +15,16 @@
 		D47CDA30205AB2950069CF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA2F205AB2950069CF25 /* ViewController.swift */; };
 		D47CDA32205AB2950069CF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA31205AB2950069CF25 /* Assets.xcassets */; };
 		D47CDA35205AB2950069CF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA33205AB2950069CF25 /* LaunchScreen.storyboard */; };
+		D4E7ED41205ABE120090C823 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED37205ABE120090C823 /* UIButtonX.swift */; };
+		D4E7ED42205ABE120090C823 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED38205ABE120090C823 /* UIImageViewX.swift */; };
+		D4E7ED43205ABE120090C823 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED39205ABE120090C823 /* UILabelX.swift */; };
+		D4E7ED44205ABE120090C823 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3A205ABE120090C823 /* UISliderX.swift */; };
+		D4E7ED45205ABE120090C823 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3B205ABE120090C823 /* UITextFieldX.swift */; };
+		D4E7ED46205ABE120090C823 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3C205ABE120090C823 /* UIViewAnchorPoint.swift */; };
+		D4E7ED47205ABE120090C823 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3D205ABE120090C823 /* UIViewControllerX.swift */; };
+		D4E7ED48205ABE120090C823 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3E205ABE120090C823 /* UIViewX.swift */; };
+		D4E7ED49205ABE120090C823 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED3F205ABE120090C823 /* UIViewXRadialGradient.swift */; };
+		D4E7ED4A205ABE120090C823 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7ED40205ABE120090C823 /* UIVisualEffectViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,16 @@
 		D47CDA31205AB2950069CF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D47CDA34205AB2950069CF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D47CDA36205AB2950069CF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E7ED37205ABE120090C823 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		D4E7ED38205ABE120090C823 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		D4E7ED39205ABE120090C823 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		D4E7ED3A205ABE120090C823 /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		D4E7ED3B205ABE120090C823 /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		D4E7ED3C205ABE120090C823 /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		D4E7ED3D205ABE120090C823 /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		D4E7ED3E205ABE120090C823 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		D4E7ED3F205ABE120090C823 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		D4E7ED40205ABE120090C823 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +80,7 @@
 		D47CDA1E205AB2950069CF25 /* Secret Project */ = {
 			isa = PBXGroup;
 			children = (
-				D47CDA31205AB2950069CF25 /* Assets.xcassets */,
+				D4E7ED35205ABCAB0090C823 /* Resources */,
 				D47CDA36205AB2950069CF25 /* Info.plist */,
 				D47CDA21205AB2950069CF25 /* Model */,
 				D47CDA29205AB2950069CF25 /* View */,
@@ -95,6 +115,32 @@
 				D47CDA2F205AB2950069CF25 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D4E7ED35205ABCAB0090C823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4E7ED36205ABE120090C823 /* DesignableX */,
+				D47CDA31205AB2950069CF25 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D4E7ED36205ABE120090C823 /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				D4E7ED37205ABE120090C823 /* UIButtonX.swift */,
+				D4E7ED38205ABE120090C823 /* UIImageViewX.swift */,
+				D4E7ED39205ABE120090C823 /* UILabelX.swift */,
+				D4E7ED3A205ABE120090C823 /* UISliderX.swift */,
+				D4E7ED3B205ABE120090C823 /* UITextFieldX.swift */,
+				D4E7ED3C205ABE120090C823 /* UIViewAnchorPoint.swift */,
+				D4E7ED3D205ABE120090C823 /* UIViewControllerX.swift */,
+				D4E7ED3E205ABE120090C823 /* UIViewX.swift */,
+				D4E7ED3F205ABE120090C823 /* UIViewXRadialGradient.swift */,
+				D4E7ED40205ABE120090C823 /* UIVisualEffectViewX.swift */,
+			);
+			path = DesignableX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +217,19 @@
 			files = (
 				D47CDA30205AB2950069CF25 /* ViewController.swift in Sources */,
 				D47CDA20205AB2950069CF25 /* AppDelegate.swift in Sources */,
+				D4E7ED4A205ABE120090C823 /* UIVisualEffectViewX.swift in Sources */,
+				D4E7ED41205ABE120090C823 /* UIButtonX.swift in Sources */,
+				D4E7ED47205ABE120090C823 /* UIViewControllerX.swift in Sources */,
+				D4E7ED44205ABE120090C823 /* UISliderX.swift in Sources */,
 				D47CDA2D205AB2950069CF25 /* TableViewCell.swift in Sources */,
+				D4E7ED42205ABE120090C823 /* UIImageViewX.swift in Sources */,
+				D4E7ED46205ABE120090C823 /* UIViewAnchorPoint.swift in Sources */,
 				D47CDA25205AB2950069CF25 /* Data.swift in Sources */,
 				D47CDA23205AB2950069CF25 /* Model.swift in Sources */,
+				D4E7ED49205ABE120090C823 /* UIViewXRadialGradient.swift in Sources */,
+				D4E7ED48205ABE120090C823 /* UIViewX.swift in Sources */,
+				D4E7ED45205ABE120090C823 /* UITextFieldX.swift in Sources */,
+				D4E7ED43205ABE120090C823 /* UILabelX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
