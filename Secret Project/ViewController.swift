@@ -17,17 +17,21 @@ class ViewController: UIViewController {
             self.tableView.reloadData()
         }
         
-        menu_view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        close_menu()
     }
     
     @IBAction func button_pressed(_ sender: Floating_Action_Button) {
         UIView.animate(withDuration: 0.3) {
             if self.menu_view.transform == .identity {
-                self.menu_view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                self.close_menu()
             } else {
                 self.menu_view.transform = .identity
             }
         }
+    }
+    
+    func close_menu() {
+        self.menu_view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
     }
 }
 
