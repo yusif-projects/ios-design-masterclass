@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,9 +26,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aJ-45-chj">
-                                <rect key="frame" x="0.0" y="233" width="375" height="434"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aJ-45-chj">
+                                <rect key="frame" x="0.0" y="213.5" width="375" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="RdG-mE-mya"/>
+                                </constraints>
                                 <inset key="separatorInset" minX="75" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="yee-3n-Cv1">
                                     <rect key="frame" x="0.0" y="108" width="375" height="0.0"/>
@@ -182,11 +184,11 @@
                         <constraints>
                             <constraint firstItem="Nh3-ev-pvy" firstAttribute="centerY" secondItem="M5E-HD-l00" secondAttribute="centerY" id="44Y-WY-YVi"/>
                             <constraint firstAttribute="trailing" secondItem="6aJ-45-chj" secondAttribute="trailing" id="AVO-4s-2D0"/>
+                            <constraint firstItem="6aJ-45-chj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ggp-hc-pgO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M5E-HD-l00" secondAttribute="bottom" constant="16" id="Ii7-90-dPQ"/>
-                            <constraint firstItem="6aJ-45-chj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="JGC-z6-pYe"/>
                             <constraint firstAttribute="trailing" secondItem="M5E-HD-l00" secondAttribute="trailing" constant="16" id="a1N-cJ-b7Z"/>
                             <constraint firstItem="6aJ-45-chj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dwc-NJ-EIo"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6aJ-45-chj" secondAttribute="bottom" id="idw-Au-8TE"/>
+                            <constraint firstItem="6aJ-45-chj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kYC-29-yP4"/>
                             <constraint firstItem="Nh3-ev-pvy" firstAttribute="centerX" secondItem="M5E-HD-l00" secondAttribute="centerX" id="zXI-0x-gCD"/>
                         </constraints>
                     </view>
