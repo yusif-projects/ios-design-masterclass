@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button_pressed(_ sender: Floating_Action_Button) {
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.2) {
             if self.menu_view.transform == .identity {
                 self.close_menu()
             } else {
