@@ -15,7 +15,7 @@ class Data {
         }
     }
     
-    static func get_day_and_weather(completion: @escaping (DayWeatherModel) -> ()) {
+    static func get_day_and_weather(completion: @escaping (DayWeatherModel?) -> ()) {
         DispatchQueue.global(qos: .userInteractive).async {
             let data = DayWeatherModel(day_name: "Friday", long_date: "March 23, 2018", temperature: "32º", city: "London", weather_icon: UIImage.init(named: "sunny"))
             

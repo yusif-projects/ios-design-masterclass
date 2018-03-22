@@ -10,13 +10,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var floating_button: Floating_Action_Button!
     @IBOutlet weak var search_button: UIButton!
     @IBOutlet weak var menu_button: UIButton!
+    @IBOutlet weak var day_label: UILabel!
+    @IBOutlet weak var date_label: UILabel!
+    @IBOutlet weak var temp_label: UILabel!
+    @IBOutlet weak var city_label: UILabel!
+    @IBOutlet weak var weather_icon: UIImageView!
     
     var tableData: [Model] = []
+    var day_weather_data: DayWeatherModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        
+        Data.get_day_and_weather { (data) in
+            if let data = data {
+                self.day_label.text = data.day_name
+                self.date_label.text = data.long_date
+                self.temp_label.text = data.temperature
+                self.city_label.text = data.city
+                self.weather_icon.image = data.weather_icon
+            }
+        }
         
         Data.getData { (data) in
             self.tableData = data

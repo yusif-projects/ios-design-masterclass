@@ -7,8 +7,17 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -181,14 +190,31 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-nw-KcD">
                                 <rect key="frame" x="329" y="36" width="30" height="30"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="search"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WQ-bS-cv3">
                                 <rect key="frame" x="16" y="36" width="30" height="30"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="menu"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JSr-ZV-S7l">
+                                <rect key="frame" x="16" y="86" width="164.5" height="69.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asu-Ye-KkZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="51.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="43"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 28, 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-Rw-meb">
+                                        <rect key="frame" x="0.0" y="51.5" width="164.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -200,14 +226,18 @@
                             <constraint firstItem="2WQ-bS-cv3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Z5o-ng-JmY"/>
                             <constraint firstAttribute="trailing" secondItem="M5E-HD-l00" secondAttribute="trailing" constant="16" id="a1N-cJ-b7Z"/>
                             <constraint firstItem="6aJ-45-chj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dwc-NJ-EIo"/>
+                            <constraint firstItem="JSr-ZV-S7l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jpR-ha-DVA"/>
                             <constraint firstItem="6aJ-45-chj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kYC-29-yP4"/>
                             <constraint firstItem="Ahn-nw-KcD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="lad-yr-OIj"/>
+                            <constraint firstItem="JSr-ZV-S7l" firstAttribute="top" secondItem="2WQ-bS-cv3" secondAttribute="bottom" constant="20" id="oVM-gZ-0it"/>
                             <constraint firstItem="Nh3-ev-pvy" firstAttribute="centerX" secondItem="M5E-HD-l00" secondAttribute="centerX" id="zXI-0x-gCD"/>
                             <constraint firstAttribute="trailing" secondItem="Ahn-nw-KcD" secondAttribute="trailing" constant="16" id="zpn-oi-yUe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="clock_button" destination="wON-uD-VAk" id="aYO-0O-rhv"/>
+                        <outlet property="date_label" destination="a0F-Rw-meb" id="aL7-lE-Oac"/>
+                        <outlet property="day_label" destination="asu-Ye-KkZ" id="Noj-ob-gMh"/>
                         <outlet property="floating_button" destination="M5E-HD-l00" id="dHu-as-DHA"/>
                         <outlet property="menu_button" destination="2WQ-bS-cv3" id="8WP-t9-AQY"/>
                         <outlet property="menu_view" destination="Nh3-ev-pvy" id="9dA-EJ-v3A"/>
