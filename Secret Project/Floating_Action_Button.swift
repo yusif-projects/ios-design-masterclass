@@ -4,7 +4,7 @@ class Floating_Action_Button: UIButtonX {
     
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             if self.transform == .identity {
                 self.transform = CGAffineTransform(rotationAngle: -45 * (.pi / 180))
                 self.backgroundColor = UIColor(red:0.76, green:0.23, blue:0.37, alpha:1.00)
