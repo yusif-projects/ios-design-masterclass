@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var temp_label: UILabel!
     @IBOutlet weak var city_label: UILabel!
     @IBOutlet weak var weather_icon: UIImageView!
+    @IBOutlet weak var date_view: UIStackView!
+    @IBOutlet weak var weather_view: UIStackView!
     
     var tableData: [Model] = []
     var day_weather_data: DayWeatherModel?
@@ -40,6 +42,18 @@ class ViewController: UIViewController {
         }
         
         close_menu()
+        setup_animated_controls()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 0.3, delay: 0.3, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.date_view.transform = .identity
+        })
+        UIView.animate(withDuration: 0.3, delay: 0.4, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.weather_view.transform = .identity
+        })
     }
     
     @IBAction func button_pressed(_ sender: Floating_Action_Button) {
@@ -64,6 +78,11 @@ class ViewController: UIViewController {
         self.pencil_button.transform = CGAffineTransform(translationX: 0, y: 15)
         self.messages_button.transform = CGAffineTransform(translationX: 10, y: 10)
         self.clock_button.transform = CGAffineTransform(translationX: 15, y: 0)
+    }
+    
+    func setup_animated_controls() {
+        self.date_view.transform = CGAffineTransform(translationX: -(date_view.frame.width) - 50, y: 0)
+        self.weather_view.transform = CGAffineTransform(translationX: weather_view.frame.width + 50, y: 0)
     }
 }
 

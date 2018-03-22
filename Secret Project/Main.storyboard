@@ -279,6 +279,7 @@
                         <outlet property="city_label" destination="fxC-An-jlJ" id="ZCv-jT-ayh"/>
                         <outlet property="clock_button" destination="wON-uD-VAk" id="aYO-0O-rhv"/>
                         <outlet property="date_label" destination="a0F-Rw-meb" id="aL7-lE-Oac"/>
+                        <outlet property="date_view" destination="JSr-ZV-S7l" id="VuA-L8-hAl"/>
                         <outlet property="day_label" destination="asu-Ye-KkZ" id="Noj-ob-gMh"/>
                         <outlet property="floating_button" destination="M5E-HD-l00" id="dHu-as-DHA"/>
                         <outlet property="menu_button" destination="2WQ-bS-cv3" id="8WP-t9-AQY"/>
@@ -289,6 +290,7 @@
                         <outlet property="tableView" destination="6aJ-45-chj" id="jaB-7w-YEL"/>
                         <outlet property="temp_label" destination="uci-zL-aOv" id="jCX-SJ-rxm"/>
                         <outlet property="weather_icon" destination="POW-CB-AkF" id="uPU-dp-ctG"/>
+                        <outlet property="weather_view" destination="4zH-kt-8no" id="elb-fF-zie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
