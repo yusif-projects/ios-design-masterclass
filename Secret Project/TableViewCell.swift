@@ -4,14 +4,16 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
-    @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var data1Label: UILabel!
     @IBOutlet weak var data2Label: UILabel!
 
     func setup(model: Model) {
         titleLabel.text = model.title
-        subtitleLabel.text = model.subTitle
-        cellImageView.image = model.image
+        if model.subTitle == "" {
+            subtitleLabel.removeFromSuperview()
+        } else {
+            subtitleLabel.text = model.subTitle
+        }
         data1Label.text = model.data1
         data2Label.text = model.data2
     }
