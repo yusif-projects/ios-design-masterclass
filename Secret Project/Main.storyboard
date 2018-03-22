@@ -147,23 +147,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-ev-pvy" customClass="UIViewX" customModule="Secret_Project" customModuleProvider="target">
                                 <rect key="frame" x="165" y="457" width="329" height="329"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByH-2t-dTg">
-                                        <rect key="frame" x="142" y="38" width="44" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="pencil"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wON-uD-VAk">
-                                        <rect key="frame" x="42" y="142" width="44" height="44"/>
+                                        <rect key="frame" x="46" y="142" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="clock"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzj-Hh-fgn">
-                                        <rect key="frame" x="73" y="64" width="44" height="44"/>
+                                        <rect key="frame" x="71" y="68" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="message"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByH-2t-dTg">
+                                        <rect key="frame" x="142" y="33" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="pencil"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95106738805770874" green="0.32649987936019897" blue="0.46891367435455322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -202,9 +202,9 @@
     </scenes>
     <resources>
         <image name="bg" width="414" height="736"/>
-        <image name="clock" width="44" height="44"/>
+        <image name="clock" width="30" height="30"/>
         <image name="f-a-b" width="60" height="60"/>
-        <image name="message" width="44" height="44"/>
-        <image name="pencil" width="44" height="44"/>
+        <image name="message" width="30" height="30"/>
+        <image name="pencil" width="30" height="30"/>
     </resources>
 </document>
