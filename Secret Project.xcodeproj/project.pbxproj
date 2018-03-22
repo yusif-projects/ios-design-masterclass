@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4148CB3206459CC003C9EA8 /* DayWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4148CB2206459CC003C9EA8 /* DayWeatherModel.swift */; };
 		D47CDA20205AB2950069CF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA1F205AB2950069CF25 /* AppDelegate.swift */; };
 		D47CDA23205AB2950069CF25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA22205AB2950069CF25 /* Model.swift */; };
 		D47CDA25205AB2950069CF25 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA24205AB2950069CF25 /* Data.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4148CB2206459CC003C9EA8 /* DayWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherModel.swift; sourceTree = "<group>"; };
 		D47CDA1C205AB2950069CF25 /* Secret Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47CDA1F205AB2950069CF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47CDA22205AB2950069CF25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D47CDA22205AB2950069CF25 /* Model.swift */,
+				D4148CB2206459CC003C9EA8 /* DayWeatherModel.swift */,
 				D47CDA24205AB2950069CF25 /* Data.swift */,
 			);
 			name = Model;
@@ -226,6 +229,7 @@
 				D4E7ED47205ABE120090C823 /* UIViewControllerX.swift in Sources */,
 				D4E7ED44205ABE120090C823 /* UISliderX.swift in Sources */,
 				D47CDA2D205AB2950069CF25 /* TableViewCell.swift in Sources */,
+				D4148CB3206459CC003C9EA8 /* DayWeatherModel.swift in Sources */,
 				D4E7ED42205ABE120090C823 /* UIImageViewX.swift in Sources */,
 				D4E7ED46205ABE120090C823 /* UIViewAnchorPoint.swift in Sources */,
 				D47CDA25205AB2950069CF25 /* Data.swift in Sources */,
