@@ -207,7 +207,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clock_button" destination="wON-uD-VAk" id="aYO-0O-rhv"/>
+                        <outlet property="floating_button" destination="M5E-HD-l00" id="dHu-as-DHA"/>
+                        <outlet property="menu_button" destination="2WQ-bS-cv3" id="8WP-t9-AQY"/>
                         <outlet property="menu_view" destination="Nh3-ev-pvy" id="9dA-EJ-v3A"/>
+                        <outlet property="messages_button" destination="gzj-Hh-fgn" id="lk3-ga-xMf"/>
+                        <outlet property="pencil_button" destination="ByH-2t-dTg" id="JLU-fC-KDN"/>
+                        <outlet property="search_button" destination="Ahn-nw-KcD" id="yTB-6E-TRb"/>
                         <outlet property="tableView" destination="6aJ-45-chj" id="jaB-7w-YEL"/>
                     </connections>
                 </viewController>

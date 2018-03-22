@@ -4,6 +4,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var menu_view: UIViewX!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var clock_button: UIButton!
+    @IBOutlet weak var messages_button: UIButton!
+    @IBOutlet weak var pencil_button: UIButton!
+    @IBOutlet weak var floating_button: Floating_Action_Button!
+    @IBOutlet weak var search_button: UIButton!
+    @IBOutlet weak var menu_button: UIButton!
     
     var tableData: [Model] = []
     
