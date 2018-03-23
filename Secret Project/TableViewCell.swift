@@ -9,7 +9,7 @@ class TableViewCell: UITableViewCell {
 
     func setup(model: Model) {
         titleLabel.text = model.title
-        if model.subTitle == "" {
+        if model.subTitle.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) == "" {
             subtitleLabel.removeFromSuperview()
         } else {
             subtitleLabel.text = model.subTitle
