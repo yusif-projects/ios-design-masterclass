@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D4148CB3206459CC003C9EA8 /* DayWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4148CB2206459CC003C9EA8 /* DayWeatherModel.swift */; };
+		D4148CB52064866C003C9EA8 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4148CB42064866C003C9EA8 /* CustomCell.swift */; };
 		D47CDA20205AB2950069CF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA1F205AB2950069CF25 /* AppDelegate.swift */; };
 		D47CDA23205AB2950069CF25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA22205AB2950069CF25 /* Model.swift */; };
 		D47CDA25205AB2950069CF25 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA24205AB2950069CF25 /* Data.swift */; };
 		D47CDA2B205AB2950069CF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA2A205AB2950069CF25 /* Main.storyboard */; };
-		D47CDA2D205AB2950069CF25 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA2C205AB2950069CF25 /* TableViewCell.swift */; };
 		D47CDA30205AB2950069CF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CDA2F205AB2950069CF25 /* ViewController.swift */; };
 		D47CDA32205AB2950069CF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA31205AB2950069CF25 /* Assets.xcassets */; };
 		D47CDA35205AB2950069CF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CDA33205AB2950069CF25 /* LaunchScreen.storyboard */; };
@@ -31,12 +31,12 @@
 
 /* Begin PBXFileReference section */
 		D4148CB2206459CC003C9EA8 /* DayWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherModel.swift; sourceTree = "<group>"; };
+		D4148CB42064866C003C9EA8 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		D47CDA1C205AB2950069CF25 /* Secret Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47CDA1F205AB2950069CF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47CDA22205AB2950069CF25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D47CDA24205AB2950069CF25 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D47CDA2A205AB2950069CF25 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D47CDA2C205AB2950069CF25 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D47CDA2F205AB2950069CF25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D47CDA31205AB2950069CF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D47CDA34205AB2950069CF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			children = (
 				D47CDA33205AB2950069CF25 /* LaunchScreen.storyboard */,
 				D47CDA2A205AB2950069CF25 /* Main.storyboard */,
-				D47CDA2C205AB2950069CF25 /* TableViewCell.swift */,
+				D4148CB42064866C003C9EA8 /* CustomCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -223,12 +223,12 @@
 			files = (
 				D47CDA30205AB2950069CF25 /* ViewController.swift in Sources */,
 				D47CDA20205AB2950069CF25 /* AppDelegate.swift in Sources */,
+				D4148CB52064866C003C9EA8 /* CustomCell.swift in Sources */,
 				D4E7ED4A205ABE120090C823 /* UIVisualEffectViewX.swift in Sources */,
 				D4E7ED4C205ACC950090C823 /* Floating_Action_Button.swift in Sources */,
 				D4E7ED41205ABE120090C823 /* UIButtonX.swift in Sources */,
 				D4E7ED47205ABE120090C823 /* UIViewControllerX.swift in Sources */,
 				D4E7ED44205ABE120090C823 /* UISliderX.swift in Sources */,
-				D47CDA2D205AB2950069CF25 /* TableViewCell.swift in Sources */,
 				D4148CB3206459CC003C9EA8 /* DayWeatherModel.swift in Sources */,
 				D4E7ED42205ABE120090C823 /* UIImageViewX.swift in Sources */,
 				D4E7ED46205ABE120090C823 /* UIViewAnchorPoint.swift in Sources */,

@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
         
         Data.get_day_and_weather { (data) in
             if let data = data {
@@ -93,8 +94,27 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_1") as! TableViewCell
+        let model = tableData[indexPath.row]
+        var cell: CustomCell!
+        
+        if model.images.count > 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "cell_2") as! CustomCell
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "cell_1") as! CustomCell
+        }
+        
         cell.setup(model: tableData[indexPath.row])
         return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let model = tableData[indexPath.row]
+        if model.images.count > 0 {
+            return 120
+        } else {
+            return 80
+        }
     }
 }

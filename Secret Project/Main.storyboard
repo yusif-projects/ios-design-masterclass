@@ -36,10 +36,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aJ-45-chj">
-                                <rect key="frame" x="0.0" y="213.5" width="375" height="240"/>
+                                <rect key="frame" x="0.0" y="193.5" width="375" height="280"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="RdG-mE-mya"/>
+                                    <constraint firstAttribute="height" constant="280" id="RdG-mE-mya"/>
                                 </constraints>
                                 <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="yee-3n-Cv1">
@@ -48,7 +48,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell_1" rowHeight="80" id="IAx-YX-msd" customClass="TableViewCell" customModule="Secret_Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell_1" rowHeight="80" id="IAx-YX-msd" customClass="CustomCell" customModule="Secret_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IAx-YX-msd" id="k6d-d6-QSP">
@@ -104,13 +104,13 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="data1Label" destination="QTs-fe-WQ3" id="e9e-dP-yZ0"/>
-                                            <outlet property="data2Label" destination="7p2-iR-b8b" id="1H0-Qj-YIO"/>
-                                            <outlet property="subtitleLabel" destination="okm-fo-CUo" id="9yj-Y4-ndp"/>
-                                            <outlet property="titleLabel" destination="elT-mX-MDn" id="VmW-3b-I2j"/>
+                                            <outlet property="data1Label" destination="QTs-fe-WQ3" id="eRz-jz-8SL"/>
+                                            <outlet property="data2Label" destination="7p2-iR-b8b" id="xLH-Vg-rgU"/>
+                                            <outlet property="subtitleLabel" destination="okm-fo-CUo" id="T7W-rX-Dc6"/>
+                                            <outlet property="titleLabel" destination="elT-mX-MDn" id="GMF-df-Irs"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell_2" rowHeight="120" id="uhD-mh-t4T" customClass="TableViewCell" customModule="Secret_Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell_2" rowHeight="120" id="uhD-mh-t4T" customClass="CustomCell" customModule="Secret_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="108" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uhD-mh-t4T" id="eMH-5U-5aU">
@@ -118,86 +118,100 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-jT-9x5">
-                                                    <rect key="frame" x="83" y="8" width="276" height="64"/>
+                                                    <rect key="frame" x="83" y="8" width="276" height="56"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design Stand Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-Lc-NtB">
-                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="32"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="28"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hangouts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kn-qa-Vwr">
-                                                            <rect key="frame" x="0.0" y="32" width="276" height="32"/>
+                                                            <rect key="frame" x="0.0" y="28" width="276" height="28"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="64" id="imW-xu-6zV"/>
+                                                        <constraint firstAttribute="height" constant="56" id="imW-xu-6zV"/>
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c4A-B3-OdJ">
-                                                    <rect key="frame" x="16" y="8" width="51" height="64"/>
+                                                    <rect key="frame" x="16" y="8" width="51" height="56"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3y-8L-mtr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="32"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="28"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7U-II-rUn">
-                                                            <rect key="frame" x="0.0" y="32" width="51" height="32"/>
+                                                            <rect key="frame" x="0.0" y="28" width="51" height="28"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="64" id="Fu4-GC-gcl"/>
+                                                        <constraint firstAttribute="height" constant="56" id="Fu4-GC-gcl"/>
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eS6-fQ-GFq">
-                                                    <rect key="frame" x="83" y="76" width="122.5" height="35.5"/>
+                                                    <rect key="frame" x="83" y="72" width="110.5" height="31.5"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="xR3-VA-Tg4" customClass="UIImageViewX" customModule="Secret_Project" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="35.5"/>
+                                                        <imageView verifyAmbiguity="off" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elon" translatesAutoresizingMaskIntoConstraints="NO" id="xR3-VA-Tg4" customClass="UIImageViewX" customModule="Secret_Project" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="31.5" height="31.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="xR3-VA-Tg4" secondAttribute="height" multiplier="1:1" id="8qO-4T-wVj"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="18"/>
+                                                                    <real key="value" value="16"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill" translatesAutoresizingMaskIntoConstraints="NO" id="90D-Zf-0Vx" customClass="UIImageViewX" customModule="Secret_Project" customModuleProvider="target">
-                                                            <rect key="frame" x="43.5" y="0.0" width="35.5" height="35.5"/>
+                                                        <imageView verifyAmbiguity="off" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elon" translatesAutoresizingMaskIntoConstraints="NO" id="90D-Zf-0Vx" customClass="UIImageViewX" customModule="Secret_Project" customModuleProvider="target">
+                                                            <rect key="frame" x="39.5" y="0.0" width="31.5" height="31.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="90D-Zf-0Vx" secondAttribute="height" multiplier="1:1" id="Onc-lc-qdq"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="18"/>
+                                                                    <real key="value" value="16"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elon" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-Bt-Ygc" customClass="UIImageViewX" customModule="Secret_Project" customModuleProvider="target">
-                                                            <rect key="frame" x="87" y="0.0" width="35.5" height="35.5"/>
+                                                        <imageView verifyAmbiguity="off" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elon" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-Bt-Ygc" customClass="UIImageViewX" customModule="Secret_Project" customModuleProvider="target">
+                                                            <rect key="frame" x="79" y="0.0" width="31.5" height="31.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="aWa-Bt-Ygc" secondAttribute="height" multiplier="1:1" id="2uC-zz-NkE"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="18"/>
+                                                                    <real key="value" value="16"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="90D-Zf-0Vx" firstAttribute="width" secondItem="90D-Zf-0Vx" secondAttribute="height" multiplier="1:1" id="cPV-0Q-xfz"/>
-                                                        <constraint firstItem="aWa-Bt-Ygc" firstAttribute="width" secondItem="aWa-Bt-Ygc" secondAttribute="height" multiplier="1:1" id="ipS-eG-IdZ"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -206,19 +220,20 @@
                                                 <constraint firstItem="kQz-jT-9x5" firstAttribute="top" secondItem="eMH-5U-5aU" secondAttribute="top" constant="8" id="3L7-q0-1dd"/>
                                                 <constraint firstItem="eS6-fQ-GFq" firstAttribute="leading" secondItem="kQz-jT-9x5" secondAttribute="leading" id="6WP-Ow-PVQ"/>
                                                 <constraint firstItem="kQz-jT-9x5" firstAttribute="width" secondItem="eMH-5U-5aU" secondAttribute="width" multiplier="0.8" constant="-24" id="ZEq-f1-tIN"/>
-                                                <constraint firstAttribute="bottom" secondItem="eS6-fQ-GFq" secondAttribute="bottom" constant="8" id="cHy-xP-0EY"/>
+                                                <constraint firstAttribute="bottom" secondItem="eS6-fQ-GFq" secondAttribute="bottom" constant="16" id="cHy-xP-0EY"/>
                                                 <constraint firstAttribute="trailing" secondItem="kQz-jT-9x5" secondAttribute="trailing" constant="16" id="hwz-2u-MqT"/>
                                                 <constraint firstItem="c4A-B3-OdJ" firstAttribute="leading" secondItem="eMH-5U-5aU" secondAttribute="leading" constant="16" id="q3f-zH-bO7"/>
-                                                <constraint firstItem="eS6-fQ-GFq" firstAttribute="top" secondItem="kQz-jT-9x5" secondAttribute="bottom" constant="4" id="qaB-w8-ENJ"/>
+                                                <constraint firstItem="eS6-fQ-GFq" firstAttribute="top" secondItem="kQz-jT-9x5" secondAttribute="bottom" constant="8" id="qaB-w8-ENJ"/>
                                                 <constraint firstItem="c4A-B3-OdJ" firstAttribute="width" secondItem="eMH-5U-5aU" secondAttribute="width" multiplier="0.2" constant="-24" id="zgq-V5-9hf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="data1Label" destination="I3y-8L-mtr" id="M73-Ok-PRY"/>
-                                            <outlet property="data2Label" destination="e7U-II-rUn" id="Dg5-xM-hwk"/>
-                                            <outlet property="subtitleLabel" destination="6Kn-qa-Vwr" id="J8P-CP-d4T"/>
-                                            <outlet property="titleLabel" destination="Cb8-Lc-NtB" id="JDP-G1-4wc"/>
+                                            <outlet property="data1Label" destination="I3y-8L-mtr" id="Kbs-dL-rCW"/>
+                                            <outlet property="data2Label" destination="e7U-II-rUn" id="CfZ-Gh-mfs"/>
+                                            <outlet property="image_stack_view" destination="eS6-fQ-GFq" id="czR-Gl-nZz"/>
+                                            <outlet property="subtitleLabel" destination="6Kn-qa-Vwr" id="l2h-tG-Nh9"/>
+                                            <outlet property="titleLabel" destination="Cb8-Lc-NtB" id="Z2y-0P-HZR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -389,7 +404,6 @@
     </scenes>
     <resources>
         <image name="bg" width="414" height="736"/>
-        <image name="bill" width="400" height="400"/>
         <image name="clock" width="30" height="30"/>
         <image name="elon" width="654" height="654"/>
         <image name="f-a-b" width="60" height="60"/>
@@ -397,6 +411,5 @@
         <image name="message" width="30" height="30"/>
         <image name="pencil" width="30" height="30"/>
         <image name="search" width="30" height="30"/>
-        <image name="steve" width="540" height="540"/>
     </resources>
 </document>
