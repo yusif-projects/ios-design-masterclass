@@ -19,10 +19,20 @@ class CustomCell: UITableViewCell {
         data2Label.text = model.data2
         
         if model.images.count > 0 {
+            let previous_views = image_stack_view.subviews
+            for view in previous_views {
+                view.removeFromSuperview()
+            }
             for image in model.images {
-                let image_view = UIImageView(frame: CGRect(x: 0, y: 0, width: 31.5, height: 31.5))
+                let image_view = UIImageViewX()
+                image_view.heightAnchor.constraint(equalTo: image_view.widthAnchor, multiplier: 1.0/1.0).isActive = true
                 image_view.image = image
-                self.image_stack_view.addArrangedSubview(image_view)
+                image_view.borderColor = .white
+                image_view.borderWidth = 1.0
+                image_view.cornerRadius = 15
+                image_view.clipsToBounds = true
+                
+                image_stack_view.addArrangedSubview(image_view)
             }
         }
     }
