@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         Data.getData { (data) in
             self.tableData = data
             self.tableView.reloadData()
+            self.animate_table_cells()
         }
         
         close_menu()
@@ -84,6 +85,24 @@ class ViewController: UIViewController {
     func setup_animated_controls() {
         self.date_view.transform = CGAffineTransform(translationX: -(date_view.frame.width) - 50, y: 0)
         self.weather_view.transform = CGAffineTransform(translationX: weather_view.frame.width + 50, y: 0)
+    }
+    
+    func animate_table_cells() {
+        let cells = tableView.visibleCells
+        
+        for cell in cells {
+            cell.transform = CGAffineTransform(translationX: cell.frame.width, y: 0)
+        }
+        
+        var delay = 0.5
+        
+        for cell in cells {
+            UIView.animate(withDuration: 0.2, delay: delay, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: {
+                cell.transform = .identity
+            })
+            
+            delay = delay + 0.1
+        }
     }
 }
 
