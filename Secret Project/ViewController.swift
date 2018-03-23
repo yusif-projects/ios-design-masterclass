@@ -93,7 +93,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_1") as! TableViewCell
         cell.setup(model: tableData[indexPath.row])
         return cell
     }
